@@ -65,4 +65,10 @@ public interface PayStation {
      * collected after a call to buy()
      */
     int empty();
+
+    /**
+     * Change the current strategy to a new strategy
+     * @param newStrategy the strategy to change to
+     */
+    void changeStrategy(RateStrategy newStrategy);
 }

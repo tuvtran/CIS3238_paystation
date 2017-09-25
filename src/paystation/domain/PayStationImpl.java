@@ -83,6 +83,11 @@ public class PayStationImpl implements PayStation {
         return totalCollected;
     }
 
+    @Override
+    public void changeStrategy(RateStrategy newStrategy) {
+        this.rateStrategy = newStrategy;
+    }
+
     private void reset() {
         timeBought = insertedSoFar = 0;
         cancelMap.clear();

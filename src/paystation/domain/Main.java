@@ -1,5 +1,6 @@
 package paystation.domain;
 
+import java.util.Map;
 import java.util.Scanner;
 
 /**
@@ -44,19 +45,59 @@ public class Main {
                     System.out.println("Time bought: " + ps.readDisplay());
                     break;
                 case 3:
+                    Receipt receipt = ps.buy();
+                    System.out.println("Thanks for your purchase. Please take the receipt " + receipt.value());
+                    System.out.print("Do you want to continue? 1 for Yes and 0 for No: ");
+                    int answer = kb.nextInt();
+                    if (answer == 0)
+                        state = 6;
                     break;
                 case 4:
+                    System.out.println("Canceling current transaction.");
+                    Map<Integer, Integer> returnCoins = ps.cancel();
+                    if (returnCoins.isEmpty()) {
+                        System.out.println("No coins to return.");
+                    } else {
+                        System.out.println("Here's the returned coins");
+                        for (Integer coin : returnCoins.keySet())
+                            System.out.println("Type: " + coin + " cents. Quantity: " + returnCoins.get(coin));
+                    }
                     break;
                 case 5:
+                    System.out.println("Please choose a Rate Strategy:");
+                    System.out.println("1/ Linear Rate Strategy");
+                    System.out.println("2/ Progressive Rate Strategy");
+                    System.out.println("3/ Alternating Rate Strategy");
+                    System.out.print("Strategy: ");
+                    int strategy = kb.nextInt();
+                    while (strategy > 3 || strategy < 1) {
+                        System.out.println("Please enter a valid strategy!");
+                        strategy = kb.nextInt();
+                    }
+                    switch (strategy) {
+                        case 1:
+                            ps.changeStrategy(new LinearRateStrategy());
+                            break;
+                        case 2:
+                            ps.changeStrategy(new ProgressiveRateStrategy());
+                            break;
+                        case 3:
+                            ps.changeStrategy(new AlternatingRateStrategy(
+                                    new LinearRateStrategy(),
+                                    new ProgressiveRateStrategy(),
+                                    new ClockBasedDecisionStrategy()
+                            ));
+                            break;
+                    }
                     break;
                 case 6:
-                    System.out.println("Thanks for using the Pay Station!");
                     break;
                 default:
                     break;
             }
             System.out.println();
         } while (state != 6);
+        System.out.println("Thanks for using the Pay Station!");
     }
 
 }
