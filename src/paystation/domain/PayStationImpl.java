@@ -28,8 +28,14 @@ public class PayStationImpl implements PayStation {
     private int timeBought;
     private Map<Integer, Integer> cancelMap;
 
-    public PayStationImpl() {
-        cancelMap = new HashMap<>();
+    /*
+    The strategy for rate calculations
+     */
+    private RateStrategy rateStrategy;
+
+    public PayStationImpl(RateStrategy rs) {
+        this.cancelMap = new HashMap<>();
+        this.rateStrategy = rs;
     }
 
     @Override
@@ -46,7 +52,7 @@ public class PayStationImpl implements PayStation {
                 throw new IllegalCoinException("Invalid coin: " + coinValue);
         }
         insertedSoFar += coinValue;
-        timeBought = insertedSoFar / 5 * 2;
+        timeBought = rateStrategy.calculateTime(insertedSoFar);
         cancelMap.put(coinValue,
                 cancelMap.getOrDefault(coinValue, 0) + 1);
     }

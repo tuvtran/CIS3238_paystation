@@ -25,7 +25,7 @@ public class PayStationImplTest {
 
     @Before
     public void setup() {
-        ps = new PayStationImpl();
+        ps = new PayStationImpl(new LinearRateStrategy());
         testMap = new HashMap<>();
     }
 
