@@ -23,7 +23,7 @@ public class ProgressiveRateStrategy implements RateStrategy {
             coinValue -= 150;
             time = 60 + coinValue / 10 * 3;
         } else {
-            time = coinValue /5 * 2;
+            time = coinValue / 5 * 2;
         }
         return time;
     }
