@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8b44490-4f5c-4ed2-92c0-6e803653ea78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/paystation/domain/LinearRateStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/paystation/domain/ProgressiveRateStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/paystation/domain/RateStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/paystation/domain/LinearRateStrategyTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/paystation/domain/ProgressiveRateStrategyTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/TuTran_Lab2/paystation/domain/PayStationImpl.class" afterPath="$PROJECT_DIR$/out/production/TuTran_Lab2/paystation/domain/PayStationImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/TuTran_Lab2/paystation/domain/PayStationImplTest.class" afterPath="$PROJECT_DIR$/out/test/TuTran_Lab2/paystation/domain/PayStationImplTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/paystation/domain/PayStationImpl.java" afterPath="$PROJECT_DIR$/src/paystation/domain/PayStationImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/paystation/domain/PayStationImplTest.java" afterPath="$PROJECT_DIR$/test/paystation/domain/PayStationImplTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/paystation/domain/ProgressiveRateStrategyTest.java" afterPath="$PROJECT_DIR$/test/paystation/domain/ProgressiveRateStrategyTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +40,8 @@
       <file leaf-file-name="ProgressiveRateStrategyTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/paystation/domain/ProgressiveRateStrategyTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-84">
-              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="494">
+              <caret line="51" column="39" lean-forward="false" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#264#265#0" expanded="true" />
@@ -137,24 +128,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="TuTran_Lab2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TuTran_Lab2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TuTran_Lab2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domain" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -770,14 +743,11 @@
       <updated>1505705739926</updated>
       <workItem from="1505705743273" duration="5967000" />
       <workItem from="1505751963039" duration="376000" />
-      <workItem from="1506318658240" duration="3559000" />
+      <workItem from="1506318658240" duration="3873000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_TuTran_Lab2 - 2017.09.18 at 12h 16m 15s.xml">
-      <configuration name="All in TuTran_Lab2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_TuTran_Lab2 - 2017.09.18 at 12h 17m 01s.xml">
       <configuration name="All in TuTran_Lab2" configurationId="JUnit" />
     </history-entry>
@@ -802,16 +772,18 @@
     <history-entry file="All_in_TuTran_Lab2 - 2017.09.25 at 12h 39m 49s.xml">
       <configuration name="All in TuTran_Lab2" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_TuTran_Lab2 - 2017.09.25 at 12h 47m 52s.xml">
+      <configuration name="All in TuTran_Lab2" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="paystation_domain_in_TuTran_Lab2 - 2017.09.18 at 01h 53m 23s.xml">
       <configuration name="paystation.domain in TuTran_Lab2" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9902000" />
+    <option name="totallyTimeSpent" value="10216000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -822,7 +794,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27985075" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27985075" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -995,8 +967,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/paystation/domain/ProgressiveRateStrategyTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="494">
+          <caret line="51" column="39" lean-forward="false" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#264#265#0" expanded="true" />

@@ -42,4 +42,13 @@ public class ProgressiveRateStrategyTest {
         assertEquals("650 yields 3 hours",180,
                 rs.calculateTime(650));
     }
+
+    /**
+     * Testing for 4 hours
+     */
+    @Test
+    public void shouldReturn240MinsFor950() {
+        assertEquals("950 yields 4 hours", 240,
+                rs.calculateTime(950));
+    }
 }
